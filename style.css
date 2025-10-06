@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*Chamando a fonte*/
+    font-family: "Oswald", sans-serif;
+    font-size: 12px;
+
+    /*Bordas View*/
+    border: solid 1px #000;
+}
+
+.container-pai {
+    width: 200px;
+    height: 200px;
+
+    /*FlexBox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-button {
+    width: 160px;
+    padding: 5px;
+    gap: 2px;
+
+    /*FlexBox*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Botões*/
+.btn {
+    cursor: pointer;
+    width: 77px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+/*Cabeçalho*/
+/*Resultado*/
+/*Rodapé*/
