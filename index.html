@@ -9,22 +9,30 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"/>
       <link rel="stylesheet" href="style.css">
-    <title>Extensão TT</title>
+    <title>Transforme Textos</title>
   </head>
   <body>
     <div class="container-pai">
-        <header class="cabecalho"></header> 
+        <header class="cabecalho"></header>
+        <img src="./icons/logo_tt16.jpg" alt="Imagem da logo" class="logo">
+        <h1>TRANSFORME textos</h1>
 
-        <input type="nome" name="text" id="input-text" class="input-text" maxlength="500" placeholder="Digite o texto aqui!" required>
+        <input type="text" id="input-text" class="input-text" maxlength="500" placeholder="Digite o texto aqui" required>
 
         <div class="container-button">
-            <button class="btn" id="btnMaiuscula">MAIÚSCULAS</button>
-            <button class="btn" id="btnMinuscula">minúsculas</button>
+            <button class="btn" id="btnMaiuscula">MAIÚSCULA</button>
+            <button class="btn" id="btnMinuscula">minúscula</button>
         </div>
 
-        <div name="result" id="result" class="result">Resultado: </div>
+        <div id="result" class="result">Resultado:</div>
+
+        <div id="text-info" class="text-info">
+          <p>Para mais opções, visite:</p>
+          <a href="link" target="_blank">tiagoneves.com.br</a>
+        </div>
     </div>
 
     <script src="script.js"></script>
   </body>
 </html>
+

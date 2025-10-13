@@ -8,7 +8,7 @@
     font-size: 0.85rem; /*REM é o nosso padrão (regras atuais)*/
 
     /*Bordas View*/
-    border: solid 1px #000;
+    /*border: solid 1px #000;*/
 }
 
 .container-pai {
@@ -20,12 +20,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3px;
 }
 
 .container-button {
     width: 160px;
     padding: 5px;
-    gap: 2px;
+    gap: 5px;
 
     /*FlexBox*/
     display: flex;
@@ -35,11 +36,72 @@
 /*Botões*/
 .btn {
     cursor: pointer;
-    width: 77px;
-    padding: 3px;
-    border-radius: 3px;
+    width: 76px;
+    height: 25px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
 /*Cabeçalho*/
+.logo {
+    width: 20px; 
+    height: auto;
+    margin-right: 130px;  
+    position: relative;   
+    top: 23px;          
+}
+
+.input-text {
+    margin-top: 4px;
+    width: 150px;
+    height: 25px;
+    padding: 4px;
+    margin-bottom: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff
+}
+
+.cabecalho {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 12px;
+}
+
 /*Resultado*/
+.result {
+    width: 150px;        
+    height: 150px;        
+    padding: 8px;
+    font-size: 0.85rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff; 
+    color: #888;        
+    overflow-y: auto;   
+    min-height: 70px;  
+}
+
 /*Rodapé*/
+.text-info {
+    font-size: 0.85rem;
+    color: #050505; 
+    text-align: center;
+}
+
+.text-info p, 
+.text-info a {
+    display: block; 
+    font-size: 12px; 
+}
+
+.text-info a {
+    color: #1183fd;   
+}
