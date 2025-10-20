@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 2px;
 }
 
 .container-button {
@@ -94,14 +94,12 @@ h1 {
     font-size: 0.85rem;
     color: #050505; 
     text-align: center;
+    padding-bottom: 11px;
 }
 
 .text-info p, 
 .text-info a {
     display: block; 
     font-size: 12px; 
-}
-
-.text-info a {
-    color: #1183fd;   
+}kkkkkk
 }
