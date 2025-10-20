@@ -20,4 +20,10 @@ window.document.addEventListener("DOMContentLoaded", function(){
         document.querySelector("#result").innerHTML = resultado;
     } 
     });
+
+    /*Botão Limpar*/
+    window.document.querySelector("#btnLimpar").addEventListener("click", function() {
+    document.querySelector("#input-text").value = "";  
+    document.querySelector("#result").innerHTML = "";  
+    });
 })

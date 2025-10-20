@@ -32,13 +32,18 @@
     /*FlexBox*/
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .group-maiuscula {
   display: flex;
   flex-direction: column; 
   gap: 5px;
+}
+
+.group-maiuscula-limpar {
+  display: flex;
+  gap: 5px; 
 }
 
 /*Botões*/
@@ -58,6 +63,19 @@
   padding: 2px;
   border-radius: 4px;
   border: 1px solid #ccc;
+}
+
+.btn3 {
+    cursor: pointer;
+    width: 70px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#btnMinuscula {
+    margin-left: -75px; 
 }
 
 /*Cabeçalho*/
