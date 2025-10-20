@@ -11,4 +11,13 @@ window.document.addEventListener("DOMContentLoaded", function(){
         let inputText = document.querySelector("#input-text").value 
         document.querySelector("#result").innerHTML = inputText.toLowerCase()
     })
+
+    /*Botão 1º Letra MAIÚSCULA*/
+    window.document.querySelector("#btnPrimeiraLetra").addEventListener("click", function() {
+    let inputText = document.querySelector("#input-text").value;
+    if (inputText.length > 0) {
+        let resultado = inputText.charAt(0).toUpperCase() + inputText.slice(1);
+        document.querySelector("#result").innerHTML = resultado;
+    } 
+    });
 })
