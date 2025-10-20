@@ -26,4 +26,11 @@ window.document.addEventListener("DOMContentLoaded", function(){
     document.querySelector("#input-text").value = "";  
     document.querySelector("#result").innerHTML = "";  
     });
+
+    /*Botão Contar Caracteres*/
+    window.document.querySelector("#btnContar").addEventListener("click", function() {
+    let inputText = document.querySelector("#input-text").value;
+    let count = inputText.length;
+    document.querySelector("#result").innerHTML = `Caracteres: ${count}`;
+    });
 })
