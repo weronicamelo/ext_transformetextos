@@ -15,11 +15,17 @@ window.document.addEventListener("DOMContentLoaded", function(){
     /*Botão 1º Letra MAIÚSCULA*/
     window.document.querySelector("#btnPrimeiraLetra").addEventListener("click", function() {
     let inputText = document.querySelector("#input-text").value;
+
     if (inputText.length > 0) {
-        let resultado = inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
+        inputText = inputText.toLowerCase();
+
+        let resultado = inputText.replace(/(?:^|\.\s*)([a-z])/g, function(match, p1) {
+            return match.replace(p1, p1.toUpperCase());
+        });
+
         document.querySelector("#result").innerHTML = resultado;
     } 
-    });
+});
 
     /*Botão Limpar*/
     window.document.querySelector("#btnLimpar").addEventListener("click", function() {
