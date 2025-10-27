@@ -35,17 +35,6 @@
     justify-content: center;
 }
 
-.group-maiuscula {
-    display: flex;
-    flex-direction: column; 
-    gap: 5px;
-}
-
-.group-maiuscula-limpar {
-    display: flex;
-    gap: 5px; 
-}
-
 /*Botões*/
 .container-button {
     display: flex;
