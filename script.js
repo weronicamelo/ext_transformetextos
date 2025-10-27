@@ -16,7 +16,7 @@ window.document.addEventListener("DOMContentLoaded", function(){
     window.document.querySelector("#btnPrimeiraLetra").addEventListener("click", function() {
     let inputText = document.querySelector("#input-text").value;
     if (inputText.length > 0) {
-        let resultado = inputText.charAt(0).toUpperCase() + inputText.slice(1);
+        let resultado = inputText.charAt(0).toUpperCase() + inputText.slice(1).toLowerCase();
         document.querySelector("#result").innerHTML = resultado;
     } 
     });

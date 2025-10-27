@@ -36,54 +36,45 @@
 }
 
 .group-maiuscula {
-  display: flex;
-  flex-direction: column; 
-  gap: 5px;
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
 }
 
 .group-maiuscula-limpar {
-  display: flex;
-  gap: 5px; 
+    display: flex;
+    gap: 5px; 
 }
 
 /*Botões*/
+.container-button {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha */
+    justify-content: center;
+    gap: 5px;
+    width: 165px;
+}
+
+/* Botões padrão */
 .btn {
     cursor: pointer;
-    width: 76px;
-    height: 25px;
-    padding: 2px;
-    border-radius: 4px;
     border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    width: 72px;
+    height: 25px;
 }
 
-.btn2 {
-  cursor: pointer;
-  width: 76px;
-  height: 40px;
-  padding: 2px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+.btn-primeira {
+    height: 40px;;
 }
 
-.btn3 {
-    cursor: pointer;
-    width: 70px;
+.btn-limpar {
     height: 40px;
-    padding: 2px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
 }
 
-.btn4 {
-    cursor: pointer;
-    height: 25px;
-    padding: 2px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-#btnMinuscula {
-    margin-left: -75px; 
+.btn-contar {
+    width: 150px;
 }
 
 /*Cabeçalho*/
@@ -92,7 +83,7 @@
     height: auto;
     margin-right: 130px;  
     position: relative;   
-    top: 23px;          
+    top: 21px;          
 }
 
 .input-text {
@@ -100,7 +91,6 @@
     width: 150px;
     height: 25px;
     padding: 4px;
-    margin-bottom: 2px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #ffffff
